@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProTest | Professional Testing System</title>
+    <title>ProTest | Testing System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -40,7 +40,7 @@
                 <div id="login-error" class="text-rose-500 text-sm hidden">Invalid credentials or account expired.</div>
                 <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 rounded transition shadow-lg shadow-blue-900/20">Sign In</button>
             </form>
-            <p class="text-xs text-slate-500 mt-4 text-center">Default Admin: admin / admin</p>
+            <p class="text-xs text-slate-500 mt-4 text-center">Добропожаловать! поддержка: 0553405045</p>
         </section>
 
         <!-- View: Admin Dashboard -->
@@ -99,7 +99,7 @@
             </div>
 
             <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <h3 class="text-lg font-medium mb-4 text-blue-400">Your Result History</h3>
+                <h3 class="text-lg font-medium mb-4 text-blue-400">Результаты</h3>
                 <div class="overflow-x-auto">
                     <table class="w-full text-left text-sm whitespace-nowrap">
                         <thead class="text-slate-400 border-b border-slate-800">
@@ -127,10 +127,10 @@
                     <button id="btn-pause" class="text-xs bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded transition">Pause</button>
                 </div>
                 <div class="text-sm text-slate-400 font-medium">
-                    Question <span id="exam-progress-current" class="text-white">1</span> / <span id="exam-progress-total">20</span>
+                    Вопрос <span id="exam-progress-current" class="text-white">1</span> / <span id="exam-progress-total">20</span>
                 </div>
                 <div>
-                    <button id="btn-early-exit" class="text-xs text-rose-400 border border-rose-900 hover:bg-rose-950 px-3 py-1.5 rounded transition">Early Exit</button>
+                    <button id="btn-early-exit" class="text-xs text-rose-400 border border-rose-900 hover:bg-rose-950 px-3 py-1.5 rounded transition">Завершить тетс</button>
                 </div>
             </div>
 
@@ -138,11 +138,11 @@
             <div class="flex-grow bg-slate-900 p-6 sm:p-10 rounded-xl border border-slate-800 shadow-2xl relative overflow-hidden">
                 <!-- Pause Overlay -->
                 <div id="pause-overlay" class="hidden absolute inset-0 backdrop-blur-md bg-slate-950/80 z-50 flex flex-col justify-center items-center">
-                    <h2 class="text-3xl font-bold text-white mb-4 tracking-widest">PAUSED</h2>
-                    <button id="btn-resume" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-2 rounded transition">Resume Exam</button>
+                    <h2 class="text-3xl font-bold text-white mb-4 tracking-widest">ПАУЗА</h2>
+                    <button id="btn-resume" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-2 rounded transition">Продолжить тест</button>
                 </div>
 
-                <div class="mb-2 text-xs font-semibold text-blue-500 uppercase tracking-wider" id="question-theme">Theme</div>
+                <div class="mb-2 text-xs font-semibold text-blue-500 uppercase tracking-wider" id="question-theme">Тема</div>
                 <h2 class="text-xl sm:text-2xl font-medium text-white mb-8" id="question-text">Question text goes here?</h2>
 
                 <div id="question-options" class="space-y-3 mb-8">
@@ -151,9 +151,9 @@
 
                 <!-- Controls -->
                 <div class="flex justify-between items-center pt-6 border-t border-slate-800">
-                    <button id="btn-prev" class="px-5 py-2 rounded bg-slate-800 hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition text-sm">Previous</button>
-                    <button id="btn-confirm" class="px-6 py-2 rounded bg-emerald-600 hover:bg-emerald-500 text-white font-medium shadow-lg shadow-emerald-900/20 transition text-sm">Confirm Answer</button>
-                    <button id="btn-next" class="px-5 py-2 rounded bg-blue-600 hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed text-white transition text-sm">Next</button>
+                    <button id="btn-prev" class="px-5 py-2 rounded bg-slate-800 hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition text-sm">Назад</button>
+                    <button id="btn-confirm" class="px-6 py-2 rounded bg-emerald-600 hover:bg-emerald-500 text-white font-medium shadow-lg shadow-emerald-900/20 transition text-sm">Подтвердить</button>
+                    <button id="btn-next" class="px-5 py-2 rounded bg-blue-600 hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed text-white transition text-sm">Далее</button>
                 </div>
             </div>
         </section>
@@ -182,4 +182,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
